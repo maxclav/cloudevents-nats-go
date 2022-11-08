@@ -9,10 +9,8 @@ import (
 )
 
 func main() {
-	ctx := context.Background()
-
 	fmt.Println("Starting receiver...")
-	if err := receiver.Start(ctx, nats.URL, nats.Subject); err != nil {
+	if err := receiver.Start(context.Background(), nats.URL, nats.Subject); err != nil {
 		panic(err)
 	}
 }

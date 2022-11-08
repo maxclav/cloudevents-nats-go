@@ -5,8 +5,9 @@ Simple project to test [CloudEvents](https://cloudevents.io/) with [NATS](https:
 ## Steps
 
 1. Run a NATS server: `make run-nats`
-2. Run sender in a terminal: `make run-sender`
-3. Run receiver in a second terminal: `make run-receiver`
+2. Run a many receivers as you want: `make run-receiver`
+3. Run a sender: `make run-sender`
+  1. Enter text in the sender.
 
 to check all commands: `make help`.
 
